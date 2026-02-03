@@ -8,5 +8,16 @@ void setup() {
 }
 
 void loop() {
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+    long duration = pulseIn(echoPin, HIGH);
+    long distance = pulseIn(echoPin, HIGH);
+    Serial.print("Distance to ");
+    Serial.print(distance);
+    Serial.println("cm");
+    delay(1000);
 // write your code here
 }
