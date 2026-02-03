@@ -20,4 +20,3 @@ void loop() {
     Serial.println("cm");
     delay(1000);
 // write your code here
-}
